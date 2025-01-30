@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Living Lab</title>
+    <!-- TailwindCSS & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+    </style>
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    clifford: '#da373d',
+                    'bg-green': "#179800",
+                    'bg-ash': "#EFEBE3",
+                    }
+                }
+            }
+            }
+        </script>
 </head>
-<body>
-    
+<body class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] font-sora mt-4 md:mt-7 md:px-[100px] lg:px-[200px]">
+    <!-- Header Section --> 
+    <header>
+        <!-- navbar section -->
+        <nav class="border-b border-b-bg-green md:border-none mb-10 md:mb-20">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <a class="text-xl cursor-pointer"><img src="./c2-assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden md:flex md:items-center md:gap-4">
+                        <i class="fa-solid fa-magnifying-glass cursor-pointer transition ease-in-out hover:scale-150"></i>
+                        <i class="fa-solid fa-cart-shopping mx-7 cursor-pointer transition ease-in-out hover:scale-150"></i>
+                        <a class="btn border border-bg-green w-28 hover:bg-bg-green hover:text-white">Login</a>
+                        <a class="btn bg-bg-green text-white w-28 hover:text-bg-green hover:bg-white hover:border-bg-green">Register</a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-xl dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-6">
+                          <li><a>Login</a></li>
+                          <li><a>Register</a></li>
+                          <li><a>Product</a></li>
+                          <li><a>Services</a></li>
+                          <li><a>Contact us</a></li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+        </nav>
+
+        <!-- hero section -->
+        <section class="text-center space-y-4 lg:mx-[300px] lg:space-y-8 mb-10 md:mb-20">
+            <h1 class="font-semibold text-4xl md:text-6xl">Freshness <span class="text-bg-green">You Can Count</span> On, Prices You’ll Love!</h1>
+            <p class="font-light lg:font-normal lg:text-xl text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            <img src="./c2-assets/hero-vegetables.png" alt="">
+        </section>
+    </header>
+    <!-- need animation for header somewhere -->
+
+    <main>
+        <!-- Service Section -->
+        <section></section>
+
+        <!-- Products Section -->
+        <section></section>
+
+        <!-- Customer Reviews Section -->
+        <section></section>
+
+        <!-- Offers Section -->
+        <section></section>
+
+        <!-- Subscribe Section -->
+        <section></section>
+
+        <!-- Footer Section -->
+        <footer></footer>
+    </main>
 </body>
 </html>
