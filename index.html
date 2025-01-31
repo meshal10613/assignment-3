@@ -73,6 +73,9 @@
               </div>
         </nav>
 
+        <!-- need animation for header somewhere -->
+        
+
         <!-- hero section -->
         <section class="text-center space-y-4 lg:mx-[300px] lg:space-y-8 mb-10 md:mb-20">
             <h1 class="font-semibold text-4xl md:text-6xl">Freshness <span class="text-bg-green">You Can Count</span> On, Prices You’ll Love!</h1>
@@ -80,7 +83,6 @@
             <img src="./c2-assets/hero-vegetables.png" alt="">
         </section>
     </header>
-    <!-- need animation for header somewhere -->
 
     <main>
         <!-- Service Section -->
@@ -89,7 +91,7 @@
             <!-- cards -->
             <div class="mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center justify-center">
                 <!-- card-1 -->
-                <div class="card bg-bg-ash w-96 pb-9 mx-auto">
+                <div class="card bg-bg-ash w-96 pb-9 mx-auto shadow-xl">
                     <figure class="px-10 pt-10">
                       <img
                         src="./c2-assets/service.png"
@@ -102,7 +104,7 @@
                     </div>
                 </div>
                 <!-- card-2 -->
-                <div class="card bg-bg-ash w-96 pb-9 mx-auto">
+                <div class="card bg-bg-ash w-96 pb-9 mx-auto shadow-xl">
                     <figure class="px-10 pt-10">
                       <img
                         src="./c2-assets/delivery.png"
@@ -115,7 +117,7 @@
                     </div>
                 </div>
                 <!-- card-3 -->
-                <div class="card bg-bg-ash w-96 pb-9 mx-auto">
+                <div class="card bg-bg-ash w-96 pb-9 mx-auto shadow-xl">
                     <figure class="px-10 pt-10">
                       <img
                         src="./c2-assets/healthy.png"
@@ -305,7 +307,7 @@
 
         <!-- Customer Reviews Section -->
         <section class="my-24 mx-auto md:mx-[100px] lg:mx-[200px]">
-          <h1 class="text-bg-green font-semibold text-2xl md:text-4xl mb-8 ml-2 lg:mb-12">Happy Customers</span></h1>
+          <h1 class="text-bg-green font-semibold text-2xl md:text-4xl mb-8 ml-2 lg:mb-12">Happy Customers</h1>
           <!-- Cards -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0">
             <!-- Card-1 -->
@@ -388,13 +390,69 @@
         </section>
 
         <!-- Offers Section -->
-        <section></section>
+        <section class="mx-auto md:mx-[100px] lg:mx-[200px]">
+          <h1 class="text-bg-green font-semibold text-2xl md:text-4xl mb-8 ml-2 lg:mb-12">Arrival & Offers</h1>
+          <div class="flex w-full flex-col lg:flex-row gap-5 -mb-28 md:-mb-0">
+            <div class="bg-[#115414] rounded-xl lg:rounded-3xl h-72 lg:h-80 md:w-[60%] items-center flex justify-between pl-5 lg:pl-10 py-5">
+              <div class="space-y-10">
+                <img src="./c2-assets/dawat-logo.png" alt="" class="">
+                <button class="btn bg-[#63B76D] text-white text-xs lg:text-xl">Cook Exotic Dishes</button>
+                <h1 class="text-white text-xl font-bold lg:text-4xl">UP to 20% OFF</h1>
+              </div>
+              <div class="relative top-7 lg:top-4">
+                <img src="./c2-assets/dawat-mock-up.png" alt="" class="w-[325px]">
+              </div>
+            </div>
+            <div class="bg-[#102861] rounded-xl lg:rounded-3xl h-72 lg:h-80 flex-grow items-center flex justify-between px-5 lg:pl-10 py-5">
+              <div class="space-y-10">
+                <img src="./c2-assets/india-gate-logo.png" alt="">
+                <button class="btn bg-[#2A4D97] text-white text-xs lg:text-xl">World’s No.1 Rice</button>
+                <h1 class="text-white text-xl font-bold lg:text-4xl">UP to 40% OFF</h1>
+              </div>
+              <div class="relative top-7 lg:top-6">
+                <img src="./c2-assets/india-gate-mock-up.png" alt="" class="w-[150px]
+                lg:w-full">
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- Subscribe Section -->
-        <section></section>
+        <section class="mx-auto md:mx-[100px] lg:mx-[200px] bg-bg-ash rounded-2xl md:rounded-3xl mb-5 py-10 px-4 w-5/6 md:w-[79%] relative top-64 md:top-56">
+          <div class="md:flex md:justify-evenly mx-auto">
+            <div>
+              <img src="./c2-assets/vegetable-busket.png" alt="">
+            </div>
+            <div class="text-center md:text-left space-y-3 md:space-y-5 flex flex-col justify-center items-center md:items-start">
+              <h1 class="font-bold text-2xl md:text-4xl text-bg-green md:text-black">Get Grocery News!</h1>
+              <p class="md:text-xl">Exclusive training tips, ticks, product deals and more.</p>
+              <input type="text" placeholder="Enter email...." class="input input-bordered w-full max-w-xs md:max-w-xl" /><br>
+              <a class="btn bg-bg-green text-white w-28 hover:text-bg-green hover:bg-white hover:border-bg-green">Register</a>
+            </div>
+          </div>
+        </section>
 
         <!-- Footer Section -->
-        <footer></footer>
+        <footer class="footer bg-bg-green text-white p-10 px-auto md:px-[100px] lg:px-[200px] md:flex md:justify-between pt-72 md:pt-96 md:pb-20 md:gap-40">
+          <nav class="md:w-1/3">
+            <img src="./c2-assets/logo-footer.png" alt="" class="mb-3 cursor-pointer">
+            <p class=" text-[#FFFFFFB3]">Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
+          </nav>
+          <nav class="flex-grow space-y-3 md:space-y-8 md:text-xl">
+            <a class="link link-hover">Product</a>
+            <a class="link link-hover">Services</a>
+            <a class="link link-hover">Contact us</a>
+          </nav>
+          <nav class="space-y-3 -flex-grow md:mt-10">
+            <a class="link link-hover">Follow Us</a>
+            <div class="flex gap-6">
+              <i class="fa-brands fa-facebook cursor-pointer"></i>
+              <i class="fa-brands fa-instagram cursor-pointer"></i>
+              <i class="fa-brands fa-linkedin cursor-pointer"></i>
+              <i class="fa-brands fa-youtube cursor-pointer"></i>
+            </div>
+          </nav>
+        </footer>
     </main>
 </body>
 </html>
