@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Lab</title>
+    <title>Assignment-2</title>
+    <link rel="shortcut icon" href="./c2-assets/logo-leaf.png" type="image/x-icon">
     <!-- TailwindCSS & DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,7 +40,8 @@
         <nav class="border-b border-b-bg-green md:border-none mb-10 md:mb-20">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <a class="text-xl cursor-pointer"><img src="./c2-assets/logo-header.png" alt=""></a>
+                  <a class="text-xl cursor-pointer md:inline-flex hidden"><img src="./c2-assets/logo-header.png" alt=""></a>
+                  <a href=""><img src="./c2-assets/logo-leaf.png" alt="" class="md:hidden"></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-xl">
@@ -72,7 +74,7 @@
                 </div>
               </div>
         </nav>
-        
+
         <!-- hero section -->
         <section class="text-center space-y-4 lg:mx-[300px] lg:space-y-8 mb-10 md:mb-20">
             <h1 class="font-semibold text-4xl md:text-6xl">Freshness <span class="text-bg-green">You Can Count</span> On, Prices You’ll Love!</h1>
@@ -93,10 +95,12 @@
                 <!-- card-1 -->
                 <div class="card bg-bg-ash w-96 pb-9 mx-auto shadow-xl">
                     <figure class="px-10 pt-10">
-                      <img
-                        src="./c2-assets/service.png"
-                        alt="27/7"
-                        class="rounded-full bg-white w-40 h-40 p-6" />
+                      <div class="bg-white rounded-full">
+                        <img
+                          src="./c2-assets/service.png"
+                          alt="27/7"
+                          class=" w-50 h-50 p-5" />
+                      </div>
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title mb-2">24/7 Services </h2>
@@ -105,12 +109,14 @@
                 </div>
                 <!-- card-2 -->
                 <div class="card bg-bg-ash w-96 pb-9 mx-auto shadow-xl">
-                    <figure class="px-10 pt-10">
+                  <figure class="px-10 pt-10">
+                    <div class="bg-white rounded-full">
                       <img
                         src="./c2-assets/delivery.png"
                         alt="27/7"
-                        class="rounded-full bg-white w-40 h-40 p-6" />
-                    </figure>
+                        class=" w-50 h-50 p-5" />
+                    </div>
+                  </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title mb-2">Fast Delivery</h2>
                       <p class="font-light md:text-xl">Fast delivery refers to the quick transportation of goods and services to customers, often within the same day or within a few hours.</p>
@@ -118,12 +124,14 @@
                 </div>
                 <!-- card-3 -->
                 <div class="card bg-bg-ash w-96 pb-9 mx-auto shadow-xl">
-                    <figure class="px-10 pt-10">
+                  <figure class="px-10 pt-10">
+                    <div class="bg-white rounded-full">
                       <img
                         src="./c2-assets/healthy.png"
                         alt="27/7"
-                        class="rounded-full bg-white w-40 h-40 p-6" />
-                    </figure>
+                        class=" w-50 h-50 p-5" />
+                    </div>
+                  </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title mb-2">Healthy Products</h2>
                       <p class="font-light md:text-xl">Healthy products are goods designed to promote well-being by providing nutritional benefits, natural ingredients, or wellness-enhancing properties.</p>
@@ -149,156 +157,174 @@
 
             <div class="grid grid-cols-2 md:grid-cols-3 gap-2 lg:relative lg:right-20 lg:-top-3">
               <!-- card-1 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/onion.png"
-                    alt="Movie" 
-                    class="w-28"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24">
+                    <img
+                      src="./c2-assets/onion.png"
+                      alt="Onion" 
+                      class="w-28 p-0"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
                   <h4>Onion 1 KG</h4>
-                  <p>$39.99</p>
+                  <p>$9.99</p>
                 </div>
               </div>
               <!-- card-2 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/tomato.jpeg"
-                    alt="Movie" 
-                    class="w-20"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24 h-24">
+                    <img
+                      src="./c2-assets/tomato.png"
+                      alt="Tomato" 
+                      class="w-28 p-1 pt-4"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
-                  <h4>Tomato 1 KG</h4>
-                  <p>$39.99</p>
+                  <h4 class="text-sm">Tomato 2 KG</h4>
+                  <p>$19.99</p>
                 </div>
               </div>
               <!-- card-3 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/potato.jpeg"
-                    alt="Movie" 
-                    class="w-24"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24 h-24">
+                    <img
+                      src="./c2-assets/potato.png"
+                      alt="Potato" 
+                      class="w-28 p-0 pt-4"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
-                  <h4>Potato 1 KG</h4>
-                  <p>$39.99</p>
+                  <h4>Potato 3 KG</h4>
+                  <p>$29.99</p>
                 </div>
               </div>
               <!-- card-4 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/onion.png"
-                    alt="Movie" 
-                    class="w-28"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24">
+                    <img
+                      src="./c2-assets/onion.png"
+                      alt="Onion" 
+                      class="w-28 p-0"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
                   <h4>Onion 1 KG</h4>
-                  <p>$39.99</p>
+                  <p>$9.99</p>
                 </div>
               </div>
               <!-- card-5 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/tomato.jpeg"
-                    alt="Movie" 
-                    class="w-20"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24 h-24">
+                    <img
+                      src="./c2-assets/tomato.png"
+                      alt="Tomato" 
+                      class="w-28 p-1 pt-4"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
-                  <h4>Tomato 1 KG</h4>
-                  <p>$39.99</p>
+                  <h4>Tomato 2 KG</h4>
+                  <p>$19.99</p>
                 </div>
               </div>
               <!-- card-6 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/potato.jpeg"
-                    alt="Movie" 
-                    class="w-24"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24 h-24">
+                    <img
+                      src="./c2-assets/potato.png"
+                      alt="Potato" 
+                      class="w-28 p-0 pt-4"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
-                  <h4>Potato 1 KG</h4>
-                  <p>$39.99</p>
+                  <h4>Potato 3 KG</h4>
+                  <p>$29.99</p>
                 </div>
               </div>
               <!-- card-7 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/onion.png"
-                    alt="Movie" 
-                    class="w-28"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24">
+                    <img
+                      src="./c2-assets/onion.png"
+                      alt="Onion" 
+                      class="w-28 p-0"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
                   <h4>Onion 1 KG</h4>
-                  <p>$39.99</p>
+                  <p>$9.99</p>
                 </div>
               </div>
               <!-- card-8 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/tomato.jpeg"
-                    alt="Movie" 
-                    class="w-20"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24 h-24">
+                    <img
+                      src="./c2-assets/tomato.png"
+                      alt="Tomato" 
+                      class="w-28 p-1 pt-4"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
-                  <h4>Tomato 1 KG</h4>
-                  <p>$39.99</p>
+                  <h4>Tomato 2 KG</h4>
+                  <p>$19.99</p>
                 </div>
               </div>
               <!-- card-9 -->
-              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex items-center mx-auto border rounded-xl">
-                <figure>
-                  <img
-                    src="./c2-assets/potato.jpeg"
-                    alt="Movie" 
-                    class="w-24"/>
+              <div class="bg-base-100 w-56 h-28 lg:w-72 md:h-32 flex gap-0 items-center mx-auto border rounded-xl">
+                <figure class="">
+                  <div class="bg-bg-ash m-4 rounded-lg w-24 h-24">
+                    <img
+                      src="./c2-assets/potato.png"
+                      alt="Potato" 
+                      class="w-28 p-0 pt-4"/>
+                  </div>
                 </figure>
-                <div class="">
+                <div class="text-sm md:text-base">
                   <div class="rating flex gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <p>4.5</p>
                   </div>
-                  <h4>Potato 1 KG</h4>
-                  <p>$39.99</p>
+                  <h4>Potato 3 KG</h4>
+                  <p>$29.99</p>
                 </div>
               </div>
             </div>
@@ -389,11 +415,12 @@
           </div>
         </section>
 
-        <!-- Offers Section -->
+        <!-- Arrival & Offers Section -->
         <section class="mx-auto md:mx-[100px] lg:mx-[200px]">
           <h1 class="text-bg-green font-semibold text-2xl md:text-4xl mb-8 ml-2 lg:mb-12">Arrival & Offers</h1>
           <div class="flex w-full flex-col lg:flex-row gap-5 -mb-28 md:-mb-0">
-            <div class="bg-[#115414] rounded-xl lg:rounded-3xl h-72 lg:h-80 md:w-[60%] items-center flex justify-between pl-5 lg:pl-10 py-5">
+            <!-- card-1 -->
+            <div class="bg-[#115414] rounded-xl lg:rounded-3xl h-72 lg:h-80 md:w-[60%] items-center flex justify-between pl-5 lg:pl-10 py-5 w-96 mx-auto">
               <div class="space-y-10">
                 <img src="./c2-assets/dawat-logo.png" alt="" class="">
                 <button class="btn bg-[#63B76D] text-white text-xs lg:text-xl">Cook Exotic Dishes</button>
@@ -403,7 +430,8 @@
                 <img src="./c2-assets/dawat-mock-up.png" alt="" class="w-[325px]">
               </div>
             </div>
-            <div class="bg-[#102861] rounded-xl lg:rounded-3xl h-72 lg:h-80 flex-grow items-center flex justify-between px-5 lg:pl-10 py-5">
+            <!-- card-2 -->
+            <div class="bg-[#102861] rounded-xl lg:rounded-3xl h-72 lg:h-80 flex-grow items-center flex justify-between px-5 lg:pl-10 py-5 w-96 mx-auto">
               <div class="space-y-10">
                 <img src="./c2-assets/india-gate-logo.png" alt="">
                 <button class="btn bg-[#2A4D97] text-white text-xs lg:text-xl">World’s No.1 Rice</button>
@@ -417,7 +445,7 @@
           </div>
         </section>
 
-        <!-- Subscribe Section -->
+        <!-- Get Grocery Section -->
         <section class="mx-auto md:mx-[100px] lg:mx-[200px] bg-bg-ash rounded-2xl md:rounded-3xl mb-5 py-10 px-4 w-5/6 md:w-[79%] relative top-64 md:top-56">
           <div class="md:flex md:justify-evenly mx-auto">
             <div>
@@ -427,7 +455,7 @@
               <h1 class="font-bold text-2xl md:text-4xl text-bg-green md:text-black">Get Grocery News!</h1>
               <p class="md:text-xl">Exclusive training tips, ticks, product deals and more.</p>
               <input type="text" placeholder="Enter email...." class="input input-bordered w-full max-w-xs md:max-w-xl" /><br>
-              <a class="btn bg-bg-green text-white w-28 hover:text-bg-green hover:bg-white hover:border-bg-green">Register</a>
+              <a class="btn bg-bg-green text-white w-28 hover:text-bg-green hover:bg-white hover:border-bg-green">Subscribe</a>
             </div>
           </div>
         </section>
